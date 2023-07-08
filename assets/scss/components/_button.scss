@@ -9,6 +9,9 @@
     user-select: none;
     background-color: transparent;
     border: $btn-border-width solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   
     @include hover() {
         color: $body-color;
@@ -28,5 +31,17 @@
   
     &:not(:disabled):not(.disabled) {
         cursor: pointer;
+    }
+
+    &-primary {
+        background-color: $primary;
+        font-weight: $font-weight-medium;
+        margin: 0 auto;
+        
+        @include mq('md', min) {
+            font-size: rem(20px);
+            width: rem(230px);
+            height: rem(48px);
+        }
     }
 }

@@ -1,0 +1,107 @@
+.animate_animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+}
+
+.animate__fadeUp {
+    -webkit-animation-name: fadeUp;
+    animation-name: fadeUp;
+    opacity: 0;
+}
+
+.animate__fadeDown {
+    -webkit-animation-name: fadeDown;
+    animation-name: fadeDown;
+    opacity: 0;
+}
+
+@keyframes imageScale {
+    0% {
+        transform: scale(1.1);
+    }
+    
+    100% {
+        transform: scale(1);
+    }
+    
+}
+
+
+.split-group {
+    &.animate_animated .c {
+        transform: translate(0, 0);
+
+    }
+}
+
+.split-js {
+    overflow-y: hidden;
+
+    .inline {
+        display: inline-block;
+        line-height: 1;
+        overflow: hidden;
+    }
+
+    .o {
+        display: inline-block;
+
+        &.o-space {
+            width: 0.28em;
+        }
+    }
+
+    .c {
+        display: block;
+        transition: opacity 0.9s cubic-bezier(0.3, 0.4, 0.1, 1), transform 0.9s cubic-bezier(0.3, 0.4, 0.1, 1);
+        transform: translate(0, 100%);
+
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        -webkit-transform: translate(0px, 20px);
+        -ms-transform: translate(0px, 20px);
+        transform: translate(0px, 20px);
+        opacity: 0;
+    }
+
+    to {
+        -webkit-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeDown {
+    from {
+        -webkit-transform: translate(0px, -120px);
+        -ms-transform: translate(0px, -120px);
+        transform: translate(0px, -120px);
+        opacity: 0;
+    }
+
+    to {
+        -webkit-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+@keyframes kenburns {
+    0% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1)
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}

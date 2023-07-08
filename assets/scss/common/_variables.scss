@@ -1,6 +1,6 @@
 // grid
 $grid-gutter-width: 15px !default;
-$container-width: 1400px !default;
+$container-width: 1200px !default;
 
 $displays: none, block, flex !default;
 
@@ -29,16 +29,15 @@ $spacers: map-merge(
 );
 
 //font
-$font-Jost: 'Jost', sans-serif;;
-$font-en: $font-Jost;
+$font-Quicksand: 'Quicksand', sans-serif;;
 $font-weight-bold: 700;
 $font-weight-medium: 500;
 $font-weight-regular: 400;
 $font-weight-light: 300;
 
 $font-size-reset: 10px !default;
-$font-family-base: $font-Jost;
-$font-size-base: 14px !default;
+$font-family-base: $font-Quicksand;
+$font-size-base: 16px !default;
 $line-height-base: 1.5;
 $font-weight-base: $font-weight-regular;
 
@@ -48,6 +47,8 @@ $black: #333;
 $white: #fff;
 $gray-100: #f0f0f0;
 $gray-300: #ccc;
+
+$primary: #FFF200;
 
 $body-color : $black;
 $body-bg: $white !default;
@@ -69,6 +70,7 @@ $input-padding-x: 10px !default;
 $input-font-family: $font-family-base;
 $input-bg: $white;
 $input-border-width: 1px;
+$input-border-radius: 15px;
 $input-border-color: $border-color;
 $input-color: $black;
 $input-disabled-bg: $gray-100;

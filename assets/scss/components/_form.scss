@@ -35,6 +35,10 @@
         background-color: $input-disabled-bg;
         opacity: 1;
     }
+
+    &.--textarea {
+        min-height: rem(300px);
+    }
 }
 
 input[type="date"],
