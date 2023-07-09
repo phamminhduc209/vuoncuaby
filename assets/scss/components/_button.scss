@@ -44,4 +44,14 @@
             height: rem(48px);
         }
     }
+
+    &-order {
+        background: #d61114;
+        color: white;
+        border-radius: 30px;
+        padding: 11px 50px;
+        font-size: 14px;
+        min-width: 170px;
+        font-weight: 500;
+    }
 }

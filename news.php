@@ -15,26 +15,8 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0" nonce="og9s8Nd0"></script>
 
-	<!-- <?php include('inc/header.php'); ?> -->
-	<header class="p-header">
-		<div class="p-header__wrap">
-			<div class="p-header__logo">
-				<a href="/"><img src="assets/images/logo.png" alt=""></a>
-			</div>
-			<div class="p-header__menu">
-				<ul class="menu">
-					<li class="menu-item"><a href="#">Trang chủ</a></li>
-					<li class="menu-item"><a href="about.html">Giới thiệu</a></li>
-					<li class="menu-item"><a href="menu.html">Menu</a></li>
-					<li class="menu-item"><a href="news.html" class="is-active">Tin tức</a></li>
-					<li class="menu-item"><a href="contact.html">Liên hệ &amp; Đặt bàn</a></li>
-				</ul>
-			</div>
-		</div>
-	</header>
+	<?php include('inc/header.php'); ?>
 
 	<main>
 		<div class="p-mv">
@@ -63,7 +45,7 @@
         </div>
 	</main>
 
-	<!-- <?php include('inc/footer.php'); ?> -->
+	<?php include('inc/footer.php'); ?>
 	<footer class="p-footer">
 		<div class="container">
 			<div class="p-footer__wrap">
