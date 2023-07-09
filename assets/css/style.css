@@ -1218,17 +1218,16 @@ input[type=month].form-control {
 	z-index: 99;
 }
 
-.p-mainvisual__slider img {
-	width: 100%;
+.p-mainvisual div {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	height: 100%;
-	transform: scale(1);
-	transition: all linear 7.5s;
-	-o-object-fit: cover;
-	object-fit: cover;
+	width: 100%;
 }
 
-.p-mainvisual__slider .slick-animate img {
-	transform: scale(1.1);
+.p-mainvisual .slick-active div {
+	animation: imageScale 13s ease 0s;
 }
 
 .p-mv {
@@ -1325,8 +1324,20 @@ input[type=month].form-control {
 	flex: 1;
 }
 
+.p-prd {
+	background-image: url("../images/341620015_190797047147205_3699481413232106472_n.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
 .p-prd__wrap {
+	background: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(237, 241, 244, 0.9) 50%, rgba(11, 17, 33, 0) 50%, black 50%, rgba(0, 0, 0, 0.9) 100%);
+}
+
+.p-prd .container {
 	display: flex;
+	align-items: center;
 }
 
 .p-prd__col {
@@ -1362,6 +1373,35 @@ input[type=month].form-control {
 	font-weight: 500;
 	font-size: 1.6rem;
 	margin-left: auto;
+}
+
+.time-work__box {
+	display: flex;
+	align-items: center;
+}
+
+.time-work__icon {
+	width: 80px;
+	height: 80px;
+	background: #fff;
+	border-radius: 100%;
+	padding: 15px;
+}
+
+.time-work__content {
+	padding-left: 1.5rem;
+}
+
+.time-work__content h4 {
+	color: #d61114;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin: 0 0 10px 0;
+}
+
+.time-work__content p {
+	color: #fff;
+	font-weight: bold;
 }
 
 @media (min-width: 576px) {
@@ -2766,10 +2806,6 @@ input[type=month].form-control {
 
 .p-form__row:not(:last-child) {
 	margin-bottom: 2rem;
-}
-
-.p-prd {
-	padding: 8rem 0;
 }
 
 }

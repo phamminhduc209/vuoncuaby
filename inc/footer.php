@@ -31,3 +31,8 @@
         <p class="p-footer__copyright">© Vườn Của By</p>
     </div>
 </footer>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/script.js"></script>

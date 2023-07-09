@@ -11,33 +11,24 @@
 	<?php include('inc/head.php'); ?>
 </head>
 <body>
-	<?php include('inc/header.php'); ?>
+	<!-- <?php include('inc/header.php'); ?> -->
 	
 	<main>
 		<div class="p-mainvisual js-slider">
 			<div>
-				<picture>
-					<source media="(max-width: 600px)" srcset="assets/images/top/img_mv_01_sp.jpg">
-					<img src="assets/images/top/img_mv_01.jpg" width="1600" height="900" alt="">
-				</picture>
+				<div style="background-image:url('assets/images/top/img_mv_01.jpg');"></div>
 			</div>
 			<div>
-				<picture>
-					<source media="(max-width: 600px)" srcset="assets/images/top/img_mv_02_sp.jpg">
-					<img src="assets/images/top/img_mv_02.jpg" width="1600" height="900" alt="">
-				</picture>
+				<div style="background-image:url('assets/images/top/img_mv_02.jpg');"></div>
 			</div>
 			<div>
-				<picture>
-					<source media="(max-width: 600px)" srcset="assets/images/top/img_mv_03_sp.jpg">
-					<img src="assets/images/top/img_mv_03.jpg" width="1600" height="900" alt="">
-				</picture>
+				<div style="background-image:url('assets/images/top/img_mv_03.jpg');"></div>
 			</div>
 		</div>
 
 		<div class="p-prd">
-			<div class="container">
-				<div class="p-prd__wrap">
+			<div class="p-prd__wrap">
+				<div class="container">
 					<div class="p-prd__col">
 						<h2 class="hline02">THỰC ĐƠN CỦA CHÚNG TÔI</h2>
 						<ul class="lst-card">
@@ -89,17 +80,12 @@
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos inventore quisquam possimus illum. Nemo eos vero quibusdam repellendus inventore sapiente commodi error aliquid, illo aliquam quo dolores eveniet laboriosam veritatis?<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos inventore quisquam possimus illum. Nemo eos vero quibusdam repellendus inventore sapiente commodi error aliquid, illo aliquam quo dolores eveniet laboriosam veritatis?<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos inventore quisquam possimus illum. Nemo eos vero quibusdam repellendus inventore sapiente commodi error aliquid, illo aliquam quo dolores eveniet laboriosam veritatis?</p>
 							<div class="time-work">
 								<div class="time-work__box">
-									<img class="time-work__icon" src="//theme.hstatic.net/200000542971/1000913900/14/img_home_main_order_right_2.png?v=416" alt="THỜI GIAN NHÀ HÀNG MỞ CỬA" sizes="50px">
-								</div>
-								<div class="box-time-work">
-									<h4>
-										THỜI GIAN NHÀ HÀNG MỞ CỬA
-									</h4>
-									<div class="outer-info-time">
-										<div class="info-time">
-											<span>Thứ 2 đến Chủ Nhật</span>
-											<span>11:00 AM - 23:59 PM</span>
-										</div>
+									<div class="time-work__icon">
+										<img src="//theme.hstatic.net/200000542971/1000913900/14/img_home_main_order_right_2.png?v=416" alt="THỜI GIAN NHÀ HÀNG MỞ CỬA">
+									</div>
+									<div class="time-work__content">
+										<h4>THỜI GIAN NHÀ HÀNG MỞ CỬA</h4>
+										<p><strong>Thứ 2 đến Chủ Nhật<br>11:00 AM - 23:59 PM</strong></p>
 									</div>
 								</div>
 								<button class="btn btn-order">Gọi Đặt Bàn</button>
@@ -107,9 +93,6 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="lst-prd">
-			
 			</div>
 		</div>
 	</main>
