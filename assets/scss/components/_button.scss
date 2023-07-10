@@ -51,7 +51,13 @@
         border-radius: 30px;
         padding: 11px 50px;
         font-size: 14px;
-        min-width: 170px;
+        max-width: 170px;
         font-weight: 500;
+        transition: all .3s;
+
+        &:hover {
+            background-color: $white;
+            color: $dark;
+        }
     }
 }
