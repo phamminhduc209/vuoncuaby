@@ -521,3 +521,29 @@
         }
     }
 }
+
+.p-detail {
+    &__row {
+        display: flex;
+        align-items: flex-start;
+        gap: rem(20px);
+    }
+
+    &__image {
+        width: 60%;
+    }
+}
+
+.p-mySwiper {
+    margin-top: rem(10px);
+
+    .swiper-slide {
+    }
+}
+
+.p-relative {
+    .lst-prd {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
