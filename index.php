@@ -11,22 +11,24 @@
 	<?php include('inc/head.php'); ?>
 </head>
 <body>
-	<!-- <?php include('inc/header.php'); ?> -->
+	<?php include('inc/header.php'); ?>
 	
 	<main>
-		<div class="p-mainvisual js-slider">
-			<div>
-				<div style="background-image:url('assets/images/top/img_mv_01.jpg');"></div>
-			</div>
-			<div>
-				<div style="background-image:url('assets/images/top/img_mv_02.jpg');"></div>
-			</div>
-			<div>
-				<div style="background-image:url('assets/images/top/img_mv_03.jpg');"></div>
+		<div class="p-mainvisual swiper js-slider">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div style="background-image:url('assets/images/top/img_mv_01.jpg');"></div>
+				</div>
+				<div class="swiper-slide">
+					<div style="background-image:url('assets/images/top/img_mv_02.jpg');"></div>
+				</div>
+				<div class="swiper-slide">
+					<div style="background-image:url('assets/images/top/img_mv_03.jpg');"></div>
+				</div>
 			</div>
 		</div>
 
-		<div class="p-about p-section">
+		<div class="p-about">
 			<div class="container">
 				<div class="p-about__wrap">
 					<div class="p-about__video">
@@ -87,7 +89,7 @@
 								<p class="lst-card__price">81.000đ</p>
 							</li>
 						</ul>
-						<p><a href="tel:+0979166661" class="btn btn-order mt-30">Xem tất cả</a></p>
+						<div><a href="tel:+0979166661" class="btn btn-order mt-30">Xem tất cả</a></div>
 					</div>
 					<div class="p-prd__col">
 						<div class="time-work">
@@ -102,22 +104,79 @@
 									<p><strong>Thứ 2 đến Chủ Nhật<br>11:00 AM - 23:59 PM</strong></p>
 								</div>
 							</div>
-							<p><a href="tel:+0979166661" class="btn btn-order">Gọi đặt bàn</a></p>
+							<div><a href="tel:+0979166661" class="btn btn-order">Gọi đặt bàn</a></div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="p-try p-section">
+		<div class="p-album">
 			<div class="container">
-				<h2 class="hline02 font-500">Những Món Ăn Nên Thử</h2>
+				<h2 class="hline02 text-center font-500 mb-50">Hình Ảnh</h2>
+			</div>
+			<div class="p-album__loop swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="assets/images/341620015_190797047147205_3699481413232106472_n.jpg" class="full-image" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="assets/images/341756428_1405517663535202_5207060208117453028_n.jpg" class="full-image" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="assets/images/342615269_1611522702658693_7451141046836614949_n.jpg" class="full-image" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="assets/images/354799150_287894050402045_3465182502305155654_n.jpg" class="full-image" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="assets/images/354804161_1862396640799593_8599145841686128836_n.jpg" class="full-image" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="assets/images/357666821_649806633703586_5493799358898939127_n.jpg" class="full-image" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="assets/images/358815848_1206894436549631_5886331950935168728_n.jpg" class="full-image" alt="">
+					</div>
+				</div>
 			</div>
 		</div>
 
-		<div class="p-news p-section">
+		<div class="p-news">
 			<div class="container">
 				<h2 class="hline02 font-500">Tin Tức</h2>
+				<ul class="lst-news">
+					<li class="lst-news__item">
+						<a href="#">
+							<div class="media">
+								<span class="default"><img src="assets/images/products/344341043_1987049251634621_9004515427612487697_n.jpg" alt=""></span>
+								<span class="hover"><img src="assets/images/products/344410104_628554748734225_7257001745854457973_n.jpg" alt=""></span>
+							</div>
+							<h2 class="ttl">Title</h2>
+							<p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ipsum dolorem odit ipsam nihil expedita officiis, magni rerum? Eveniet reprehenderit eaque excepturi architecto ut nostrum pariatur reiciendis veniam vel impedit.</p>
+						</a>
+					</li>
+					<li class="lst-news__item">
+						<a href="#">
+							<div class="media">
+								<span class="default"><img src="assets/images/products/344341043_1987049251634621_9004515427612487697_n.jpg" alt=""></span>
+								<span class="hover"><img src="assets/images/products/344410104_628554748734225_7257001745854457973_n.jpg" alt=""></span>
+							</div>
+							<h2 class="ttl">Title</h2>
+							<p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ipsum dolorem odit ipsam nihil expedita officiis, magni rerum? Eveniet reprehenderit eaque excepturi architecto ut nostrum pariatur reiciendis veniam vel impedit.</p>
+						</a>
+					</li>
+					<li class="lst-news__item">
+						<a href="#">
+							<div class="media">
+								<span class="default"><img src="assets/images/products/344341043_1987049251634621_9004515427612487697_n.jpg" alt=""></span>
+								<span class="hover"><img src="assets/images/products/344410104_628554748734225_7257001745854457973_n.jpg" alt=""></span>
+							</div>
+							<h2 class="ttl">Title</h2>
+							<p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ipsum dolorem odit ipsam nihil expedita officiis, magni rerum? Eveniet reprehenderit eaque excepturi architecto ut nostrum pariatur reiciendis veniam vel impedit.</p>
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</main>

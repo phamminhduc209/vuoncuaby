@@ -4,8 +4,9 @@ let scrollTop, scrollLeft = 0;
 app.init = function () {
 	app.tab();
 	app.anchorLink();
-	app.sliderHome();
 	app.showMenu();
+	app.sliderHome();
+	app.sliderLoop();
 };
 
 app.tab = function () {
@@ -46,13 +47,26 @@ app.anchorLink = function () {
 }
 
 app.sliderHome = function () {
-	$('.js-slider').slick({
-        arrows: false,
-        autoplay: true,
-        autoplaySpeed: 8000,
-        fade: true,
-        speed: 500
-	})
+	var swiper = new Swiper(".js-slider", {
+		effect: "fade",
+		autoplay: {
+			delay: 8000,
+			disableOnInteraction: false,
+		},
+	});
+}
+
+app.sliderLoop = function () {
+	var swiper = new Swiper(".p-album__loop", {
+		autoplay: {
+			delay: 1,
+			disableOnInteraction: false,
+		},
+		spaceBetween: 30,
+		slidesPerView: "auto",
+		loop: true,
+		speed: 14000,
+	});
 }
 
 app.showMenu = function () {

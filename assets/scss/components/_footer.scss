@@ -39,6 +39,8 @@
                 }
 
                 &:hover {
+                    color: #FFF200;
+
                     &::before {
                         width: rem(15px);
                     }
@@ -48,14 +50,15 @@
     }
 
     &__title {
-        font-size: 20px;
-        letter-spacing: 0.02em;
-        margin: 0 0 20px;
-        position: relative;
-        line-height: 30px;
         color: #9ba3ab;
+        font-size: rem(20px);
+        font-weight: normal;
+        letter-spacing: .02em;
+        margin: 0 0 rem(20px);
+        position: relative;
+        line-height: rem(30px);
         border-bottom: 1px solid rgba(55,72,88,0.5);
-        padding-bottom: 15px;
+        padding-bottom: rem(15px);
     }
 
     &__copyright {

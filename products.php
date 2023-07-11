@@ -18,44 +18,113 @@
 	<main>
 		<div class="p-mv wow">
             <div class="p-mv__media" style="background-image: url(assets/images/about/banner.jpg);"></div>
-            <h2 class="p-mv__ttl">Về Chúng Tôi</h2>
+            <h2 class="p-mv__ttl">Menu Của Chúng Tôi</h2>
         </div>
 
-		<div class="p-products p-section">
+		<div class="p-product p-section">
 			<div class="container">
-				<div class="d-flex">
+				<div class="p-product__row">
 					<div class="sidebar">
-						<ul>
+						<ul class="sidebar-menu">
+							<li><a href="#">Menu</a></li>
+							<li><a href="#">Món Đặc Biệt</a></li>
 							<li><a href="#">Lai Rai</a></li>
-							<li><a href="#">Lai Rai</a></li>
-							<li><a href="#">Lai Rai</a></li>
-							<li><a href="#">Lai Rai</a></li>
-							<li><a href="#">Lai Rai</a></li>
-							<li><a href="#">Lai Rai</a></li>
-							<li><a href="#">Lai Rai</a></li>
+							<li><a href="#">Combo</a></li>
+							<li><a href="#">Nướng</a></li>
+							<li><a href="#">Nướng kiểu THE GANGS</a></li>
+							<li><a href="#">Cơm Chiên</a></li>
 						</ul>
 					</div>
 					<div class="lst-prd">
 						<div class="lst-prd__item">
-							<a href="#" class="lst-prd__media">
-								<img src="assets/images/products/344341043_1987049251634621_9004515427612487697_n.jpg" alt="">
+							<a href="#">
+								<div class="media">
+									<span class="default"><img src="assets/images/products/344341043_1987049251634621_9004515427612487697_n.jpg" alt=""></span>
+									<span class="hover"><img src="assets/images/products/344410104_628554748734225_7257001745854457973_n.jpg" alt=""></span>
+								</div>
+								<h2 class="ttl"><a href="#" alt="Bò nướng sốt đậu phộng">Bò nướng sốt đậu phộng</a></h2>
+								<p class="prc">264,600₫</p>
 							</a>
-							<h2 class="lst-prd__ttl"><a href="#" alt="Bò nướng sốt đậu phộng">Bò nướng sốt đậu phộng</a></h2>
-							<p class="lst-prd__price">264,600₫</p>
 						</div>
 						<div class="lst-prd__item">
-							<a href="#" class="lst-prd__media">
-								<img src="assets/images/products/344341043_1987049251634621_9004515427612487697_n.jpg" alt="">
+							<a href="#">
+								<div class="media">
+									<span class="default"><img src="assets/images/products/344341043_1987049251634621_9004515427612487697_n.jpg" alt=""></span>
+									<span class="hover"><img src="assets/images/products/344410104_628554748734225_7257001745854457973_n.jpg" alt=""></span>
+								</div>
+								<h2 class="ttl"><a href="#" alt="Bò nướng sốt đậu phộng">Bò nướng sốt đậu phộng</a></h2>
+								<p class="prc">264,600₫</p>
 							</a>
-							<h2 class="lst-prd__ttl"><a href="#" alt="Bò nướng sốt đậu phộng">Bò nướng sốt đậu phộng</a></h2>
-							<p class="lst-prd__price">264,600₫</p>
 						</div>
 						<div class="lst-prd__item">
-							<a href="#" class="lst-prd__media">
-								<img src="assets/images/products/344341043_1987049251634621_9004515427612487697_n.jpg" alt="">
+							<a href="#">
+								<div class="media">
+									<span class="default"><img src="assets/images/products/344341043_1987049251634621_9004515427612487697_n.jpg" alt=""></span>
+									<span class="hover"><img src="assets/images/products/344410104_628554748734225_7257001745854457973_n.jpg" alt=""></span>
+								</div>
+								<h2 class="ttl"><a href="#" alt="Bò nướng sốt đậu phộng">Bò nướng sốt đậu phộng</a></h2>
+								<p class="prc">264,600₫</p>
 							</a>
-							<h2 class="lst-prd__ttl"><a href="#" alt="Bò nướng sốt đậu phộng">Bò nướng sốt đậu phộng</a></h2>
-							<p class="lst-prd__price">264,600₫</p>
+						</div>
+						<div class="lst-prd__item">
+							<a href="#">
+								<div class="media">
+									<span class="default"><img src="assets/images/products/344341043_1987049251634621_9004515427612487697_n.jpg" alt=""></span>
+									<span class="hover"><img src="assets/images/products/344410104_628554748734225_7257001745854457973_n.jpg" alt=""></span>
+								</div>
+								<h2 class="ttl"><a href="#" alt="Bò nướng sốt đậu phộng">Bò nướng sốt đậu phộng</a></h2>
+								<p class="prc">264,600₫</p>
+							</a>
+						</div>
+						<div class="lst-prd__item">
+							<a href="#">
+								<div class="media">
+									<span class="default"><img src="assets/images/products/344341043_1987049251634621_9004515427612487697_n.jpg" alt=""></span>
+									<span class="hover"><img src="assets/images/products/344410104_628554748734225_7257001745854457973_n.jpg" alt=""></span>
+								</div>
+								<h2 class="ttl"><a href="#" alt="Bò nướng sốt đậu phộng">Bò nướng sốt đậu phộng</a></h2>
+								<p class="prc">264,600₫</p>
+							</a>
+						</div>
+						<div class="lst-prd__item">
+							<a href="#">
+								<div class="media">
+									<span class="default"><img src="assets/images/products/344341043_1987049251634621_9004515427612487697_n.jpg" alt=""></span>
+									<span class="hover"><img src="assets/images/products/344410104_628554748734225_7257001745854457973_n.jpg" alt=""></span>
+								</div>
+								<h2 class="ttl"><a href="#" alt="Bò nướng sốt đậu phộng">Bò nướng sốt đậu phộng</a></h2>
+								<p class="prc">264,600₫</p>
+							</a>
+						</div>
+						<div class="lst-prd__item">
+							<a href="#">
+								<div class="media">
+									<span class="default"><img src="assets/images/products/344341043_1987049251634621_9004515427612487697_n.jpg" alt=""></span>
+									<span class="hover"><img src="assets/images/products/344410104_628554748734225_7257001745854457973_n.jpg" alt=""></span>
+								</div>
+								<h2 class="ttl"><a href="#" alt="Bò nướng sốt đậu phộng">Bò nướng sốt đậu phộng</a></h2>
+								<p class="prc">264,600₫</p>
+							</a>
+						</div>
+						<div class="lst-prd__item">
+							<a href="#">
+								<div class="media">
+									<span class="default"><img src="assets/images/products/344341043_1987049251634621_9004515427612487697_n.jpg" alt=""></span>
+									<span class="hover"><img src="assets/images/products/344410104_628554748734225_7257001745854457973_n.jpg" alt=""></span>
+								</div>
+								<h2 class="ttl"><a href="#" alt="Bò nướng sốt đậu phộng">Bò nướng sốt đậu phộng</a></h2>
+								<p class="prc">264,600₫</p>
+							</a>
+						</div>
+						<div class="lst-prd__item">
+							<a href="#">
+								<div class="media">
+									<span class="default"><img src="assets/images/products/344341043_1987049251634621_9004515427612487697_n.jpg" alt=""></span>
+									<span class="hover"><img src="assets/images/products/344410104_628554748734225_7257001745854457973_n.jpg" alt=""></span>
+								</div>
+								<h2 class="ttl"><a href="#" alt="Bò nướng sốt đậu phộng">Bò nướng sốt đậu phộng</a></h2>
+								<p class="prc">264,600₫</p>
+							</a>
 						</div>
 					</div>
 				</div>
