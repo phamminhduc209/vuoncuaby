@@ -22,6 +22,10 @@
     }
 
     &__menu {
+        @include mq('md') {
+            display: none;
+        }
+        
         .menu {
             display: flex;
             align-items: center;
@@ -56,6 +60,106 @@
                             transform: scaleX(1);
                         }
                     }
+                }
+            }
+        }
+    }
+
+    &__hamburger {
+        cursor: pointer;
+        background-color: $white;
+        width: rem(60px);
+        height: rem(50px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include mq('md', min) {
+            width: rem(120px);
+            height: rem(100px);
+        }
+    }
+
+    .open_menu {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.5s;
+        width: rem(35px);
+
+        &::before,
+        & > span::before,
+        & > span::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            margin-bottom: rem(9px);
+            background-color: $dark;
+            -webkit-transition: opacity 0.5s, background-color 0.5s, -webkit-transform 0.5s;
+            transition: opacity 0.5s, background-color 0.5s, -webkit-transform 0.5s;
+            transition: transform 0.5s, opacity 0.5s, background-color 0.5s;
+            transition: transform 0.5s, opacity 0.5s, background-color 0.5s, -webkit-transform 0.5s;
+        }
+
+        & > span {
+            position: relative;
+            line-height: 1;
+            font-size: 0;
+            width: 100%;
+
+            &::after {
+                margin: 0 0 0 auto;
+                -webkit-transition: width 0.5s, -webkit-transform 0.5s;
+                transition: width 0.5s, -webkit-transform 0.5s;
+                transition: transform 0.5s, width 0.5s;
+                transition: transform 0.5s, width 0.5s, -webkit-transform 0.5s;
+            }
+
+            span {
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+            }
+        }
+
+        @include mq('md', min) {
+            &:hover:not(.is-active) {
+                & > span {
+                    &::after {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+
+        &.is-active {
+            &::before {
+                background-color: #2c2422;
+                -webkit-transform: rotate(45deg) translate(rem(7px), rem(7px));
+                transform: rotate(45deg) translate(rem(7px), rem(7px));
+            }
+
+            & > span {
+                &::before,
+                &::after {
+                    background-color: #2c2422;
+                }
+
+                &::before {
+                    -webkit-transform: scaleX(0);
+                    transform: scaleX(0);
+                }
+
+                &::after {
+                    width: 100%;
+                    -webkit-transform: rotate(-45deg) translate(rem(7px), rem(-7px));
+                    transform: rotate(-45deg) translate(rem(7px), rem(-7px));
                 }
             }
         }

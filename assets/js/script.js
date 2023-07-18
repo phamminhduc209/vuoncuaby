@@ -7,6 +7,41 @@ app.init = function () {
 	app.showMenu();
 	app.sliderHome();
 	app.sliderLoop();
+	app.showMenu();
+};
+
+app.setVh = function () {
+	let vh = window.innerHeight * 0.01;
+	document.documentElement.style.setProperty("--vh", `${vh}px`);
+}
+
+app.showMenu = function () {
+	let ele = $(".js-header-menu");
+	let gloHeader = $(".p-header");
+	let globalnavi = $(".p-header__menu");
+
+	// $(window).scroll(function() {
+	// 	let wscrollLeft = $(this).scrollLeft();
+	// 	gloHeader.css('left', -wscrollLeft);
+	// })
+
+	$(ele).on("click", function (e) {
+		e.preventDefault();
+		app.setVh();
+		menuBtn = $(this).find('.open_menu');
+
+		if (menuBtn.hasClass("is-active")) {
+			app.resumeScroll();
+			menuBtn.removeClass("is-active");
+			globalnavi.removeClass("is-active");
+			gloHeader.removeClass("openMenu");
+		} else {
+			app.stopScroll();
+			menuBtn.addClass("is-active");
+			globalnavi.addClass("is-active");
+			gloHeader.addClass("openMenu");
+		}
+	});
 };
 
 app.tab = function () {
@@ -74,6 +109,7 @@ app.showMenu = function () {
 	let globalnavi = $(".p-header__menu");
 
 	$(ele).on('click', function (e) {
+		console.log('hihi');
 		e.preventDefault();
 		if ($(this).hasClass('is-active')) {
 			app.resumeScroll();
