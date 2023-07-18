@@ -25,7 +25,7 @@
         @include mq('md') {
             display: none;
         }
-        
+
         .menu {
             display: flex;
             align-items: center;
@@ -75,6 +75,7 @@
         justify-content: center;
 
         @include mq('md', min) {
+            display: none;
             width: rem(120px);
             height: rem(100px);
         }

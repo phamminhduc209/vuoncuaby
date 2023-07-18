@@ -3296,6 +3296,7 @@ input[type=month].form-control {
 }
 
 .p-header__hamburger {
+	display: none;
 	width: 12rem;
 	height: 10rem;
 }
