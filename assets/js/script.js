@@ -4,7 +4,6 @@ let scrollTop, scrollLeft = 0;
 app.init = function () {
 	app.tab();
 	app.anchorLink();
-	app.showMenu();
 	app.sliderHome();
 	app.sliderLoop();
 	app.showMenu();
@@ -16,7 +15,7 @@ app.setVh = function () {
 }
 
 app.showMenu = function () {
-	let ele = $(".js-header-menu");
+	let ele = $(".js-hamburger-menu");
 	let gloHeader = $(".p-header");
 	let globalnavi = $(".p-header__menu");
 
@@ -102,25 +101,6 @@ app.sliderLoop = function () {
 		slidesPerView: "auto",
 		loop: true,
 		speed: 14000,
-	});
-}
-
-app.showMenu = function () {
-	let ele = $(".js-show-menu");
-	let globalnavi = $(".p-header__menu");
-
-	$(ele).on('click', function (e) {
-		console.log('hihi');
-		e.preventDefault();
-		if ($(this).hasClass('is-active')) {
-			app.resumeScroll();
-			$(this).removeClass('is-active');
-			globalnavi.stop().slideUp(300);
-		} else {
-			app.stopScroll();
-			$(this).addClass('is-active');
-			globalnavi.stop().slideDown(300);
-		}
 	});
 }
 

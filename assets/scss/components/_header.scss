@@ -23,22 +23,47 @@
 
     &__menu {
         @include mq('md') {
-            display: none;
+            background-color: $white;
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 99;
+            transition: opacity .6s ease-out;
+            padding: 50px 25px;
+
+            &.is-active {
+                pointer-events: auto;
+                opacity: 1;
+            }
         }
 
         .menu {
             display: flex;
             align-items: center;
+            flex-direction: column;
             gap: rem(20px);
+
+            @include mq('md') {
+                margin-top: 50px;
+            }
+
+            @include mq('md', min) {
+                flex-direction: row;
+            }
         
             &-item {
                 a {
-                    color: $white;
-                    text-shadow: 0 0 1rem #000, 0 0 1rem rgba(0,0,0,.3);
                     position: relative;
         
                     @include mq('md', min) {
+                        color: $white;
                         font-size: rem(18px);
+                        text-shadow: 0 0 1rem #000, 0 0 1rem rgba(0,0,0,.3);
                     }
         
                     &::after {
@@ -68,16 +93,15 @@
     &__hamburger {
         cursor: pointer;
         background-color: $white;
-        width: rem(60px);
-        height: rem(50px);
+        width: rem(50px);
+        height: rem(40px);
         display: flex;
         align-items: center;
         justify-content: center;
+        z-index: 99;
 
         @include mq('md', min) {
             display: none;
-            width: rem(120px);
-            height: rem(100px);
         }
     }
 
@@ -88,7 +112,7 @@
         align-items: center;
         justify-content: center;
         transition: background-color 0.5s;
-        width: rem(35px);
+        width: rem(30px);
 
         &::before,
         & > span::before,
