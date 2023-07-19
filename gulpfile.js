@@ -9,7 +9,7 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 var replace = require('gulp-replace');
 var mmq = require('gulp-merge-media-queries');
-
+const cleanCSS = require('gulp-clean-css');
 
 // File paths
 const files = { 
@@ -23,6 +23,7 @@ function scssTask(){
         .pipe(sass.sync({outputStyle: 'compressed'})) // compile SCSS to CSS
         .pipe(postcss([ autoprefixer() ])) // PostCSS plugins
         .pipe(mmq())
+        .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(dest('./assets/css/')
     ); // put final CSS in dist folder
 }

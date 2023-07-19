@@ -50,19 +50,18 @@
     }
 
     &__title {
-        color: #9ba3ab;
         font-size: rem(20px);
         font-weight: normal;
         letter-spacing: .02em;
         margin: 0 0 rem(20px);
         position: relative;
         line-height: rem(30px);
-        border-bottom: 1px solid rgba(55,72,88,0.5);
+        border-bottom: 1px solid rgba($color: #374858, $alpha: .5);
         padding-bottom: rem(15px);
     }
 
     &__copyright {
-        border-top: 1px solid rgba(55,72,88,0.5);
+        border-top: 1px solid rgba($color: #374858, $alpha: .5);
         font-size: rem(10px);
         padding: rem(10px) 0 0;
         text-align: center;

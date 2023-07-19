@@ -84,6 +84,7 @@ app.anchorLink = function () {
 app.sliderHome = function () {
 	var swiper = new Swiper(".js-slider", {
 		effect: "fade",
+		loop: true,
 		autoplay: {
 			delay: 8000,
 			disableOnInteraction: false,

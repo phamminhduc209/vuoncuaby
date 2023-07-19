@@ -110,3 +110,19 @@
         @content;
     }
 }
+
+@mixin overflowText($line) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*! autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /* autoprefixer: on */
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+  }
+  
+//?param is interger number without unit!
+@mixin paddingBottomByPercent($width, $height, $result: 0%) {
+    $result: math.div($height, $width) * 100%;
+    padding-bottom: $result;
+}

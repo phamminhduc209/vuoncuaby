@@ -285,8 +285,25 @@
 
     &__media {
         width: 20%;
-        border-radius: rem(10px);
         overflow: hidden;
+        border-radius: rem(10px);
+
+        a {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            @include paddingBottomByPercent(100, 75);
+
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+        }
     }
 
     &__content {
@@ -464,25 +481,23 @@
 
     &__item {
         .media {
+            border-radius: rem(5px);
             position: relative;
             overflow: hidden;
-            height: rem(250px);
+            
+            @include mq('md', min) {
+                @include paddingBottomByPercent(383, 256);
+            }
 
-            span {
-                top: 0;
-                left: 0;
+            img {
                 position: absolute;
-                // display: -webkit-box;
-                // display: flex;
-                // -webkit-box-align: center;
-                // align-items: center;
-                opacity: 0;
-                overflow: hidden;
-                -webkit-transition: opacity .5s;
-                transition: opacity .5s;
-                padding: 0;
-                height: 100%;
-                width: 100%;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                -o-object-fit: cover;
+                object-fit: cover;
+                transition: opacity 1s;
             }
 
             .default {
@@ -497,9 +512,10 @@
         .ttl {
             font-size: 16px;
             line-height: 25px;
-            color: #5e514d;
             width: 100%;
             margin-top: rem(10px);
+            letter-spacing: .02em;
+            transition: color .3s;
         }
 
         .txt {
@@ -517,6 +533,10 @@
                 .hover {
                     opacity: 1;
                 }
+            }
+
+            .ttl {
+                color: $primary;
             }
         }
     }
