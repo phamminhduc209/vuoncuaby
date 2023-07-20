@@ -5,8 +5,15 @@
 }
 
 html {
-	font-size: $font-size-reset;
+	// font-size: $font-size-reset;
+	font-size: calc(10 / 3.75)*1vw;
 	overflow-x: hidden;
+
+	@include mq('xl') {
+		@include mq('md', min) {
+			font-size: calc(10 / 12)*1vw;
+		}
+	}
 	
 	&.noscroll {
 		position: fixed;

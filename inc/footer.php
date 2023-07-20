@@ -3,7 +3,7 @@
         <div class="p-footer__wrap">
             <div class="p-footer__logo">
                 <div class="logo">
-                    <a href="/"><img src="assets/images/logo.png" alt=""></a>
+                    <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
                 </div>
                 <p class="mt-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, modi? Ipsum animi amet magni non, quis eveniet quibusdam voluptate eligendi fugiat harum laudantium, itaque optio minus, quas eum culpa pariatur?</p>
             </div>

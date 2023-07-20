@@ -8,6 +8,7 @@ app.init = function () {
 	app.sliderHome();
 	app.sliderLoop();
 	app.showMenu();
+	app.sticky();
 };
 
 app.setVh = function () {
@@ -19,11 +20,6 @@ app.showMenu = function () {
 	let ele = $(".js-header-menu");
 	let gloHeader = $(".p-header");
 	let globalnavi = $(".p-header__menu");
-
-	// $(window).scroll(function() {
-	// 	let wscrollLeft = $(this).scrollLeft();
-	// 	gloHeader.css('left', -wscrollLeft);
-	// })
 
 	$(ele).on("click", function (e) {
 		e.preventDefault();
@@ -43,6 +39,29 @@ app.showMenu = function () {
 		}
 	});
 };
+
+app.sticky = function () {
+	if ($("[data-header-nav-area]").length) {
+		function make_sticky() {
+			$("[data-header-nav-area]").stick_in_parent({
+				parent: "[data-header-area]",
+				offset_top: 110
+			});
+		}
+
+		if ($(window).width() > 767) {
+			make_sticky();
+		}
+
+		$(window).on('resize', function () {
+			if ($(window).width() > 767) {
+				make_sticky();
+			} else {
+				$("[data-header-nav-area]").trigger("sticky_kit:detach");
+			}
+		});
+	}
+}
 
 app.tab = function () {
 	$(document).on("click", ".tab a", function (e) {

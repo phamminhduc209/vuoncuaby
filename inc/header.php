@@ -4,7 +4,7 @@
 <header class="p-header">
 	<div class="p-header__wrap">
 		<div class="p-header__logo">
-			<a href="index.php"><img src="assets/images/logo.png" alt=""></a>
+			<a href="index.html"><img src="assets/images/logo.png" alt=""></a>
 		</div>
 		<div class="p-header__menu">
 			<ul class="menu">

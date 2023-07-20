@@ -17,8 +17,13 @@
     }
 
     &__logo {
-        flex: 0 0 rem(200px);
-        max-width: rem(200px);
+        flex: 0 0 rem(150px);
+        max-width: rem(150px);
+
+        @include mq('md', min) {
+            flex-basis: rem(200px);
+            max-width: rem(200px);
+        }
     }
 
     &__menu {

@@ -7,11 +7,12 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="description" content="{[#SITE_DESCRIPTION#]}">
 	<meta name="keywords" content="{[#SITE_KEYWORDS#]}">
-	<title>Vườn Cũa By</title>
+	<title>Bò nướng sốt đậu phộng</title>
 	<!-- <?php include('inc/head.php'); ?> -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -23,7 +24,7 @@
 	<header class="p-header">
 		<div class="p-header__wrap">
 			<div class="p-header__logo">
-				<a href="index.php"><img src="assets/images/logo.png" alt=""></a>
+				<a href="index.html"><img src="assets/images/logo.png" alt=""></a>
 			</div>
 			<div class="p-header__menu">
 				<ul class="menu">
@@ -56,7 +57,7 @@
 				<div class="container">
 					<div class="p-detail__row">
 						<div class="p-detail__image">
-							<div class="swiper mySwiper2">
+							<div class="swiper swiper-big">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
 										<img src="assets/images/products/344341043_1987049251634621_9004515427612487697_n.jpg" />
@@ -81,12 +82,12 @@
 									</div>
 									<div class="swiper-slide">
 										<img src="assets/images/products/344410104_628554748734225_7257001745854457973_n.jpg" />
-									</div>
-									<div class="swiper-slide">
 									</div>
 								</div>
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
 							</div>
-							<div thumbsSlider="" class="swiper mySwiper p-mySwiper">
+							<div thumbsSlider="" class="swiper swiper-thumb">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
 										<img src="assets/images/products/344341043_1987049251634621_9004515427612487697_n.jpg" />
@@ -111,13 +112,11 @@
 									</div>
 									<div class="swiper-slide">
 										<img src="assets/images/products/344410104_628554748734225_7257001745854457973_n.jpg" />
-									</div>
-									<div class="swiper-slide">
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="p-detail__item">
+						<div class="p-detail__content">
 							<h1 class="hline03 mb-10" style="padding: 0 0 10px; border-bottom: 1px dotted #dfe0e1;">Chips lắc phô mai</h1>
 							<p class="txt-price">81,000₫</p>
 							<div class="product-description mt-40">
@@ -138,48 +137,48 @@
 			</div>
 
 			<div class="p-relative mt-100">
-				<div class="container">
+				<div class="container p-product">
 					<h2 class="hline02">Món ăn khác</h2>
-					<div class="lst-prd">
-						<div class="lst-prd__item">
-							<a href="#">
-								<div class="media">
-									<span class="default"><img src="assets/images/products/344341043_1987049251634621_9004515427612487697_n.jpg" alt=""></span>
-									<span class="hover"><img src="assets/images/products/344410104_628554748734225_7257001745854457973_n.jpg" alt=""></span>
-								</div>
-								<h2 class="ttl"><a href="#" alt="Bò nướng sốt đậu phộng">Bò nướng sốt đậu phộng</a></h2>
-								<p class="prc">264,600₫</p>
-							</a>
+					<div class="lst-card">
+						<div class="lst-card__item">
+							<div class="media">
+								<a href="detail.html">
+									<img src="assets/images/products/344341043_1987049251634621_9004515427612487697_n.jpg" class="default" alt="">
+									<img src="assets/images/products/344410104_628554748734225_7257001745854457973_n.jpg" class="hover" alt="">
+								</a>
+							</div>
+							<h2 class="ttl"><a href="#" alt="Bò nướng sốt đậu phộng">Bò nướng sốt đậu phộng</a></h2>
+							<p class="prc">264,600₫</p>
 						</div>
-						<div class="lst-prd__item">
-							<a href="#">
-								<div class="media">
-									<span class="default"><img src="assets/images/products/344341043_1987049251634621_9004515427612487697_n.jpg" alt=""></span>
-									<span class="hover"><img src="assets/images/products/344410104_628554748734225_7257001745854457973_n.jpg" alt=""></span>
-								</div>
-								<h2 class="ttl"><a href="#" alt="Bò nướng sốt đậu phộng">Bò nướng sốt đậu phộng</a></h2>
-								<p class="prc">264,600₫</p>
-							</a>
+						<div class="lst-card__item">
+							<div class="media">
+								<a href="detail.html">
+									<img src="assets/images/products/344341043_1987049251634621_9004515427612487697_n.jpg" class="default" alt="">
+									<img src="assets/images/products/344410104_628554748734225_7257001745854457973_n.jpg" class="hover" alt="">
+								</a>
+							</div>
+							<h2 class="ttl"><a href="#" alt="Bò nướng sốt đậu phộng">Bò nướng sốt đậu phộng</a></h2>
+							<p class="prc">264,600₫</p>
 						</div>
-						<div class="lst-prd__item">
-							<a href="#">
-								<div class="media">
-									<span class="default"><img src="assets/images/products/344341043_1987049251634621_9004515427612487697_n.jpg" alt=""></span>
-									<span class="hover"><img src="assets/images/products/344410104_628554748734225_7257001745854457973_n.jpg" alt=""></span>
-								</div>
-								<h2 class="ttl"><a href="#" alt="Bò nướng sốt đậu phộng">Bò nướng sốt đậu phộng</a></h2>
-								<p class="prc">264,600₫</p>
-							</a>
+						<div class="lst-card__item">
+							<div class="media">
+								<a href="detail.html">
+									<img src="assets/images/products/344341043_1987049251634621_9004515427612487697_n.jpg" class="default" alt="">
+									<img src="assets/images/products/344410104_628554748734225_7257001745854457973_n.jpg" class="hover" alt="">
+								</a>
+							</div>
+							<h2 class="ttl"><a href="#" alt="Bò nướng sốt đậu phộng">Bò nướng sốt đậu phộng</a></h2>
+							<p class="prc">264,600₫</p>
 						</div>
-						<div class="lst-prd__item">
-							<a href="#">
-								<div class="media">
-									<span class="default"><img src="assets/images/products/344341043_1987049251634621_9004515427612487697_n.jpg" alt=""></span>
-									<span class="hover"><img src="assets/images/products/344410104_628554748734225_7257001745854457973_n.jpg" alt=""></span>
-								</div>
-								<h2 class="ttl"><a href="#" alt="Bò nướng sốt đậu phộng">Bò nướng sốt đậu phộng</a></h2>
-								<p class="prc">264,600₫</p>
-							</a>
+						<div class="lst-card__item">
+							<div class="media">
+								<a href="detail.html">
+									<img src="assets/images/products/344341043_1987049251634621_9004515427612487697_n.jpg" class="default" alt="">
+									<img src="assets/images/products/344410104_628554748734225_7257001745854457973_n.jpg" class="hover" alt="">
+								</a>
+							</div>
+							<h2 class="ttl"><a href="#" alt="Bò nướng sốt đậu phộng">Bò nướng sốt đậu phộng</a></h2>
+							<p class="prc">264,600₫</p>
 						</div>
 					</div>
 				</div>
@@ -193,7 +192,7 @@
 			<div class="p-footer__wrap">
 				<div class="p-footer__logo">
 					<div class="logo">
-						<a href="/"><img src="assets/images/logo.png" alt=""></a>
+						<a href="index.html"><img src="assets/images/logo.png" alt=""></a>
 					</div>
 					<p class="mt-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, modi? Ipsum animi amet magni non, quis eveniet quibusdam voluptate eligendi fugiat harum laudantium, itaque optio minus, quas eum culpa pariatur?</p>
 				</div>
@@ -223,26 +222,27 @@
 	</footer>
 
 	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/slick.min.js"></script>
 	<script src="assets/js/wow.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 	<script src="assets/js/script.js"></script>
-
+	
 	<script>
-		var swiper = new Swiper(".mySwiper", {
+		var swiper = new Swiper(".swiper-thumb", {
+			loop: true,
 			spaceBetween: 10,
-			slidesPerView: 6,
+			slidesPerView: 4,
 			freeMode: true,
 			watchSlidesProgress: true,
 		});
-		var swiper2 = new Swiper(".mySwiper2", {
+		var swiper2 = new Swiper(".swiper-big", {
+			loop: true,
 			spaceBetween: 10,
 			navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
 			},
 			thumbs: {
-			swiper: swiper,
+				swiper: swiper,
 			},
 		});
 	</script>
