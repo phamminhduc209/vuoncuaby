@@ -5,9 +5,12 @@
 }
 
 html {
-	// font-size: $font-size-reset;
-	font-size: calc(10 / 3.75)*1vw;
+	font-size: $font-size-reset;
 	overflow-x: hidden;
+
+	@include mq('md') {
+		font-size: calc(10 / 3.75)*1vw;
+	}
 
 	@include mq('xl') {
 		@include mq('md', min) {

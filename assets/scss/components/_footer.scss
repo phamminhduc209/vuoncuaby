@@ -2,10 +2,17 @@
     background: #f2f5fa;
     padding: rem(60px) 0 rem(20px);
 
-    &__wrap {
-        display: flex;
+    .logo {
+        max-width: rem(120px);
 
         @include mq('md', min) {
+            max-width: rem(200px);
+        }
+    }
+
+    &__wrap {
+        @include mq('md', min) {
+            display: flex;
             gap: rem(40px);
         }
 
@@ -17,6 +24,10 @@
     }
 
     &__menu {
+        @include mq('md') {
+            margin-top: rem(25px);
+        }
+
         @include mq('md', min) {
             max-width: rem(200px);
         }
@@ -60,11 +71,18 @@
         padding-bottom: rem(15px);
     }
 
+    &__fanpage {
+        @include mq('md') {
+            margin-top: rem(25px);
+        }
+    }
+
     &__copyright {
         border-top: 1px solid rgba($color: #374858, $alpha: .5);
         font-size: rem(10px);
-        padding: rem(10px) 0 0;
         text-align: center;
+        padding: rem(20px) 0 0;
+        margin-top: rem(20px);
         
         @include mq('md', min) {
             padding-top: rem(20px);
@@ -72,8 +90,4 @@
             margin-top: rem(40px);
         }
     }
-}
-
-.logo {
-    max-width: rem(200px);
 }
