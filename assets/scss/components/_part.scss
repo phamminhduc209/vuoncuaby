@@ -152,25 +152,51 @@
     background-attachment: fixed;
 
     &__wrap {
-        background: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(237, 241, 244, 0.9) 50%, rgba(11, 17, 33, 0) 50%, black 50%, rgba(0, 0, 0, 0.9) 100%);
-        padding: rem(120px) 0;
+        @include mq('md', min) {
+            background: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(237, 241, 244, 0.9) 50%, rgba(11, 17, 33, 0) 50%, black 50%, rgba(0, 0, 0, 0.9) 100%);
+            padding: rem(120px) 0;
+        }
     }
 
     .container {
-        display: flex;
+        @include mq('md') {
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        @include mq('md', min) {
+            display: flex;
+        }
     }
 
     &__col {
         flex: 1;
+        padding: rem(25px) rem(20px);
 
         @include mq('md', min) {
             padding: 0 rem(50px);
+        }
+
+        &.--menu {
+            @include mq('md') {
+                background: #edf1f4;   
+            }
+        }
+
+        &.--booking {
+            @include mq('md') {
+                background: #0b1121;
+            }
         }
     }
 }
 
 .p-about {
-    padding: rem(100px) 0;
+    padding: rem(50px) 0;
+
+    @include mq('md', min) {
+        padding: rem(100px) 0;
+    }
 
     &__wrap {
         @include mq('md', min) {
