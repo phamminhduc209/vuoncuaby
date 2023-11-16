@@ -1,0 +1,33 @@
+version: "3.1"
+
+services:
+  wordpress:
+    image: wordpress
+    restart: "no"
+    ports:
+      - 8001:80
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: vuon_cua_by_website
+      WORDPRESS_DB_PASSWORD: 123456
+      WORDPRESS_DB_NAME: vuon_cua_by_website_db
+    volumes:
+      - ./wp:/var/www/html
+      - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+  phpmyadmin:
+    image: phpmyadmin
+    restart: "no"
+    ports:
+      - 9001:80
+    environment:
+      - PMA_ARBITRARY=1
+  db:
+    image: mariadb:10.8.3
+    restart: "no"
+    environment:
+      MARIADB_DATABASE: vuon_cua_by_website_db
+      MARIADB_USER: vuon_cua_by_website
+      MARIADB_PASSWORD: 123456
+      MYSQL_ROOT_PASSWORD: "1"
+    volumes:
+      - ./db:/var/lib/mysql

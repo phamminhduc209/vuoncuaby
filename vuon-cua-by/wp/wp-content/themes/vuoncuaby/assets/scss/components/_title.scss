@@ -1,0 +1,38 @@
+.hline02 {
+    font-size: rem(20px);
+    margin-bottom: rem(15px);
+    
+    @include mq('md', min) {
+        font-size: rem(30px);
+        margin-bottom: rem(30px);
+    }
+}
+
+.hline03 {
+    font-size: rem(18px);
+    margin-bottom: rem(15px);
+    
+    @include mq('md', min) {
+        font-size: rem(20px);
+        margin-bottom: rem(30px);
+    }
+}
+
+.font-500 {
+    font-weight: $font-weight-medium;
+}
+
+.txt-white {
+    color: $white;
+}
+
+.txt-note {
+    color: #716c6c;
+    font-size: rem(13px);
+}
+
+.txt-price {
+    color: #db1a2a;
+    font-weight: 500;
+    font-size: rem(16px);
+}

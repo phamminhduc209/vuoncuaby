@@ -1,4 +1,3 @@
-# package folder #
 node_modules/
-package-lock.json
-.idea/
+vuon-cua-by/package-lock.json
+vuon-cua-by/db
