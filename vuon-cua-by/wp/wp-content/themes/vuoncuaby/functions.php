@@ -179,9 +179,7 @@ add_action('wp_enqueue_scripts', 'vuoncuaby_scripts');
 
 function wpdocs_enqueue_custom_admin_style()
 {
-	wp_enqueue_style('daterangepicker-style', get_theme_file_uri('/assets/css/daterangepicker.css'), array(), time(), null);
 	wp_enqueue_script('moment', get_template_directory_uri() . '/assets/js/moment.min.js', array(), _S_VERSION, true);
-	wp_enqueue_script('daterangepicker', get_template_directory_uri() . '/assets/js/daterangepicker.min.js', array(), _S_VERSION, true);
 	wp_enqueue_script('admin-script', get_template_directory_uri() . '/assets/js/admin-script.js', array(), _S_VERSION, true);
 
 	global $pagenow;
@@ -243,9 +241,9 @@ if (defined('JETPACK__VERSION')) {
 if (function_exists('acf_add_options_page')) {
 
 	acf_add_options_page(array(
-		'page_title'     => 'Thành Công car Settings',
-		'menu_title'    => 'Thành Công car Settings',
-		'menu_slug'     => 'thanh-cong-car-settings',
+		'page_title'     => 'Vườn của By Settings',
+		'menu_title'    => 'Vườn của By Settings',
+		'menu_slug'     => 'vuon-cua-by-settings',
 		'position' => 5,
 		'capability'    => 'edit_posts',
 		'redirect'        => false
